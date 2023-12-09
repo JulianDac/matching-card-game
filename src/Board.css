@@ -1,0 +1,28 @@
+/* Board.css */
+.board {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 8 columns grid */
+    grid-gap: 10px; /* Space between cards */
+    justify-content: center; /* Center grid horizontally */
+    align-content: center; /* Center grid vertically */
+    padding: 10px; /* Padding around the entire grid */
+    max-width: 30vw; /* Maximum width of the grid */
+    margin: auto; /* Center the grid on the page */
+    margin-top: 30px; /* Add margin to push the board down */
+  }
+  
+  /* Responsive adjustments */
+    @media (max-width: 768px) {
+    .board {
+        grid-template-columns: repeat(4, 1fr); /* Adjust to 4 columns on smaller screens */
+        max-width: 90vw;
+        }
+    }
+  
+    @media (max-width: 480px) {
+        .board {
+        grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns on very small screens */
+        max-width: 95vw;
+        }
+    }
+  

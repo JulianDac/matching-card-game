@@ -1,0 +1,32 @@
+.card {
+    width: 60px;
+    height: 90px;
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin: 10px; /* Spacing between cards */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Indicates the card is clickable */
+    background-color: #fff; /* White background */
+    transition: transform 0.3s; /* Smooth transformation on flip */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  .card-back {
+    width: 100%;
+    height: 100%;
+    background-color: #345579; /* Replace with the color or image of card back */
+    border-radius: 8px; /* Match the border radius of the card */
+  }
+  
+  .card img {
+    max-width: 80%; /* Ensures the image fits inside the card */
+    max-height: 80%; /* Ensures the image fits inside the card */
+    border-radius: 8px; /* Match the border radius of the card */
+  }
+  
